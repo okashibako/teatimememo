@@ -1,0 +1,41 @@
+ローカルリポジトリをリモートに登録してソースツリーで使えるようにする方法
+
+①documents下にtipmemoフォルダを作る
+
+②tipmemoフォルダ下に適当にsample.txtを作る
+
+③git initをする
+成功すると以下のように出力される
+Initialized empty Git repository in C:/Users/swift0910/Documents/tipmemo/.git/
+
+
+④git add sample.txt実行
+※役割：指定したファイルの変更内容をインデックスに追加し、「git commit」の対象にする）
+
+・中に指定したファイルが無いと以下のような文が出力される
+fatal: pathspec 'sample.txt' did not match any files
+
+⑤git commit -m "add new file
+・最初のコミット
+・成功すると以下のような文が出力される
+[master (root-commit) 6bf689d] add new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sample.txt
+
+ ⑥git remote add origin https://github.com/okashibako/teatimememo.git
+
+ ・リモートリポジトリにローカルリポジトリを登録。
+
+⑦git push origin master　
+
+・最初のpushを行う。ソースツリーでみるとこのプッシュした結果が反映されているはず。
+・成功すると以下のような文が出力される
+
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/okashibako/teatimememo.git
+
+⑧ソースツリーにgithubでコピーしたリポジトリのアドレスをクローン。
+
