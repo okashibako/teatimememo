@@ -1,0 +1,23 @@
+オブジェクト部分
+
+const person = {
+  0: { id: 1, name: "umi", age: "17" },
+  1: { id: 2, name: "niko", family: "18" },
+  2: { id: 3, name: "kotori", family: "17" },
+  3: { id: "", name: "", family: "" }
+};
+
+
+javascript部分
+
+Object.keys(person).reduce((acc, val) =>
+  (person[val]['name'] === '' ? acc : {
+     ...acc, [val]: person[val] } ),
+ {});
+
+結果
+{
+ 0: { id: 1, name: "umi", age: "17" },
+ 1: { id: 2, name: "niko", family: "18" },
+ 2: { id: 3, name: "kotori", family: "17" },
+};

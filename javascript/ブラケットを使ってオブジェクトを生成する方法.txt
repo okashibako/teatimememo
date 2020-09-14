@@ -1,0 +1,10 @@
+let obj = {};
+obj['name'] = 'asaba';
+obj['receive'] = {};
+obj['receive']['receivingBaseId'] = 10;
+ 
+return (
+<div>
+{obj.text}
+</div>
+);

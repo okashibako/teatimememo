@@ -1,0 +1,27 @@
+﻿ソースツリーで現在のブランチをマージ後、gitflowで新規リリース※
+
+名前はバージョンを上げたものをつける　　ここで、gradleに書いてあるバージョンも一つ上げる
+
+もらったjksファイルをキーストアパスに当てはめる
+
+eventlogのlocateでaabを取得
+
+もらったjksファイルをandroidStudioのgenerate signed bundleでパスワードと名前と
+キーストアパス(例・C:\Users\swift0910\Desktop\○○)を書き込む
+
+app-release.aabが生成される（ドキュメントー＞○○APP_ANDROIDー＞appー＞relaese
+）
+eventlogのlocateでaabを受け取る
+
+リリースをするの青いボタンを押す
+
+受け取ったaabをgoogleplayconsoleのページ中央にドラッグ
+
+ソースツリーでbuild.gradleの内容をコミット後ブランチv〇.〇.〇をgitflowでリリースを終了する
+
+（コミット名はバージョンの更新でok）
+
+※取り込みたいブランチに移動してgitflowー＞フィーチャー終了でもok
+
+
+

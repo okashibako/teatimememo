@@ -1,0 +1,27 @@
+  certificateHandlerFile(e){
+    const that = this;
+    var files = [];
+    files = e;
+    let bundle_arr = [];
+    for (var i = 0; i < files.length; i++) {
+      var promise = that.fileReader(files[i]);
+        promise.then(function (result) {
+        console.log(result)
+        bundle_arr.push(result);
+        that.setState({ image: bundle_arr });
+      })
+    }
+    that.setState({ isShowCertificate1: false });
+  }
+  fileReader(file){
+    var files = [];
+        return new Promise((resolve, reject) => {
+          var reader = new FileReader();  
+          reader.onload = () => {
+            resolve(reader.result )
+          };
+          reader.readAsDataURL(file);
+        });
+  }
+
+
