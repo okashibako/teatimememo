@@ -1,0 +1,73 @@
+【Gradle】react-nativeプロジェクトの中のGradleの設定がちぐはぐだった時の対処法
+
+react-nativeでアプリを作っていることは前にもここに書きましたが、このクロスプラットフォーム
+
+アプリ下においても相変わらずGradleが火を噴いているようです。まあ便利なんですけど・・・。
+
+その火を噴いているところは、Gradleのバージョン周りとプラグイン周りです。
+
+最初にGradleのバージョンのエラーの火消しにとりかかりますが、まずはProjectStructureの中の
+
+Gradle Versionを確認します。
+
+中を見ると、バージョン6.2のGradleが最初から設定されているのがわかります。
+
+30行目のdependencies {classpath 'com.android.tools.build:gradle:3.3.0'}でクラスパスの
+
+バージョンが3.3.0となっていますが、今現在のGradleのバージョン6.2では3.3.0のクラスパス
+
+とは整合性が取れず、エラーとなるようです。今回止まってたのはそこが原因でした。
+
+こちらは使っているGradleのバージョンを下げるだけで修正することができました。
+
+バージョンは自分の開発環境次第で変わってきますが、自分の場合は全てのプロジェクトで5.4.1を使っているので今回は6.2から5.4.1に切り替えました。
+
+ソースツリーで更新されたgradle-wrapper.propertiesを見ると下のように変更されていることが確認できます。
+
+before
+
+distributionUrl=https\://services.gradle.org/distributions/gradle-6.2-all.zip
+
+after
+
+distributionUrl=https\://services.gradle.org/distributions/gradle-5.4.1-all.zip
+
+
+
+
+さてGradleのバージョン関係エラーが消えたので、いざ再ビルド。と思った矢先また異なるエラーが発生。
+
+> Task :app:processDebugResources FAILED
+40 actionable tasks: 3 executed, 37 up-to-date
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> Could not read path 'C:\Users\swift0910\Documents\stampapp\android\
+app\build\generated\not_namespaced_r_class_sources\debug\r\androidx\activity'.
+
+
+
+
+要するにapp:processDebugResourcesが無いということ。探すのめんどい・・・。うーん、ネイティブでビルドした
+
+プロジェクトとクラスプラットフォームでビルドしたプロジェクトでは入っているファイルに差異がありすぎて
+
+ネイティブを触ったことない人にとっては苦痛このうえない環境になってることが見受けられます。
+
+解決方法もいくつかありましたが、stackOverFlowを閲覧しているとどうやらapply plugin:'baseというプラグイン
+
+を入れるのが一番簡単かつメジャーそうでした。
+
+導入方法はこちら↓
+
+②apply from: file・・・の下ら辺にapply plugin:'base'を追加
+
+③再度react-native run-androidを実行
+
+長引きましたがこれでようやくビルド完了です。ネイティブ経験者ですがかなり精神削られました。
+
+他人のreact-nativeファイルをクローンした際は自分のandroidStudioの環境と
+
+Gradleのバージョン確認を忘れずに。
