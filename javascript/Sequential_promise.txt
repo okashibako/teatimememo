@@ -1,0 +1,11 @@
+return new Promise((resolve, reject) => {
+  const j = 1;
+  console.log(j);
+  resolve(j)
+}).then(function(result){
+  console.log(1 + result);
+  return 1 + result;
+}).then(function(result){
+  console.log(1 + result);
+  return 1 + result;
+});
