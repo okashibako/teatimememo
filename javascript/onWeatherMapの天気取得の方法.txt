@@ -1,3 +1,0 @@
-http://api.openweathermap.org/data/2.5/weather?id=1863289&units=metric&appid=d499b4914d2559c5459513e7940ef605
-
-appidの部分＝自分のAPIKey
