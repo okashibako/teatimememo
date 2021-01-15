@@ -1,0 +1,17 @@
+継承元:building
+
+継承するモノ:temple hospital
+
+共通の処理
+
+open();
+
+close();
+
+包含: buzzer bell
+
+例: B buzzer = new Buzzer();
+
+  void method() {
+    buzzer.beat();  // Bクラスのメソッドに処理を委譲
+  }
