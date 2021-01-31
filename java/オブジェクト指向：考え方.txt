@@ -15,3 +15,5 @@ close();
   void method() {
     buzzer.beat();  // Bクラスのメソッドに処理を委譲
   }
+
+  浅羽けんと
