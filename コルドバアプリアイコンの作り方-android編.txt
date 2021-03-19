@@ -1,0 +1,56 @@
+コルドバアプリアイコンの作り方 android編
+
+res/icon/android/に以下の画像を作る
+
+ldpi.png
+mdpi.png
+hdpi.png
+xhdpi.png
+xxhdpi.png
+xxxhdpi.png
+GooglePlayStore
+
+サイズ
+ldpi: 36*36px
+
+mdpi: 48*48px
+
+hdpi: 72*72px
+
+xhdpi: 96*96px
+
+xxhdpi: 144*144px
+
+xxxhdpi: 192*192px
+
+GooglePlayStore: 512*512
+
+//////////////////////////
+
+コルドバアプリスクリーンの作り方
+
+res/screen/android/に以下の画像を作る
+
+ldpi.png
+mdpi.png
+hdpi.png
+xhdpi.png
+xxhdpi.png
+xxxhdpi.png
+GooglePlayStore
+
+サイズ
+
+ldpi: 240*320px
+
+mdpi: 360*640px
+
+hdpi: 540*960px
+
+xhdpi: 720*1280px
+
+xxhdpi: 1080*1920px
+
+xxxhdpi: 1440*2560px
+
+android-newscreen-hdpi

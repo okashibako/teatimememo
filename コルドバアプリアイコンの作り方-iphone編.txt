@@ -1,0 +1,71 @@
+コルドバアプリアイコンの作り方 iphone編
+
+res/icon/ios/に以下の画像を作る
+
+icon-60@3x.png
+icon-60.png
+icon-60@2x.png
+icon-76.png
+icon-76@2x.png
+icon-Small-40.png
+icon-Small-40@2x.png
+icon.png
+icon@2x.png
+icon-72.png
+icon-72@2x.png
+icon-Small.png
+icon-Small@2x.png
+icon-Small-50.png
+icon-Small-50@2x.png
+iTunesArtwork@2x.png
+iTunesArtwork.png
+
+サイズ
+
+icon-60@3x: 180*180px
+icon-60: 60*60px
+icon-60@2x: 120*120px
+icon-76: 76*76px
+icon-76@2x: 152*152px
+icon-Small-40: 40*40px
+icon-Small-40@2x: 80*80px
+icon: 57*57px
+icon@2x: 114*114px
+icon-72: 72*72px
+icon-72@2x: 144*144px
+icon-Small: 29*29px
+icon-Small@2x: 58*58px
+icon-Small-50: 50*50px
+icon-Small-50@2x: 100*100px
+iTunesArtwork@2x: 1024*1024px
+iTunesArtwork: 512*512px
+
+<!-- iOS 8.0+ -->
+<!-- iPhone 6 Plus  -->
+<icon height="180" src="res/icon/ios/icon-60@3x.png" width="180" />
+<!-- iOS 7.0+ -->
+<!-- iPhone / iPod Touch  -->
+<icon height="60" src="res/icon/ios/icon-60.png" width="60" />
+<icon height="120" src="res/icon/ios/icon-60@2x.png" width="120" />
+<!-- iPad -->
+<icon height="76" src="res/icon/ios/icon-76.png" width="76" />
+<icon height="152" src="res/icon/ios/icon-76@2x.png" width="152" />
+<!-- iOS 6.1 -->
+<!-- Spotlight Icon -->
+<icon height="40" src="res/icon/ios/icon-Small-40.png" width="40" />
+<icon height="80" src="res/icon/ios/icon-Small-40@2x.png" width="80" />
+<!-- iPhone / iPod Touch -->
+<icon height="57" src="res/icon/ios/icon.png" width="57" />
+<icon height="114" src="res/icon/ios/icon@2x.png" width="114" />
+<!-- iPad -->
+<icon height="72" src="res/icon/ios/icon-72.png" width="72" />
+<icon height="144" src="res/icon/ios/icon-72@2x.png" width="144" />
+<!-- iPhone Spotlight and Settings Icon -->
+<icon height="29" src="res/icon/ios/icon-Small.png" width="29" />
+<icon height="58" src="res/icon/ios/icon-Small@2x.png" width="58" />
+<!-- iPad Spotlight and Settings Icon -->
+<icon height="50" src="res/icon/ios/icon-Small-50.png" width="50" />
+<icon height="100" src="res/icon/ios/icon-Small-50@2x.png" width="100" />
+
+<icon height="1024" src="res/icon/ios/iTunesArtwork@2x.png" width="1024" />
+<icon height="512" src="res/icon/ios/iTunesArtwork.png" width="512" />
