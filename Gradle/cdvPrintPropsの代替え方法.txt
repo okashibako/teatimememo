@@ -1,0 +1,4 @@
+task cdvPrintProps <<は廃止になりました
+
+代替え手段
+task doLast
