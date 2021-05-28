@@ -2,13 +2,13 @@
 
 res/icon/android/に以下の画像を作る
 
-ldpi.png
-mdpi.png
-hdpi.png
-xhdpi.png
-xxhdpi.png
-xxxhdpi.png
-GooglePlayStore
+newlogo-ldpi.png
+newlogo-mdpi.png
+newlogo-hdpi.png
+newlogo-xhdpi.png
+newlogo-xxhdpi.png
+newlogo-xxxhdpi.png
+newlogo-GooglePlayStore
 
 サイズ
 ldpi: 36*36px
