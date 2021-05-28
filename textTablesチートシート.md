@@ -4,11 +4,9 @@ Text Tablesチートシート
 
 Text Tables: Enable - enable extension.
 
-//テーブルを生成する
+//tabを押し続けることでテーブルを生成していく
 
 Text Tables: Create table - create new table in cursor position.
-
-Text Tables: Format under cursor - reformat the table under cursor.
 
 //tabキーを押したときにテーブル内のカラムをtabで飛べるようにする
 
@@ -18,13 +16,20 @@ Text Tables: Enter table mode - enter table mode.
 
 Text Tables: Exit table mode - exit table mode.
 
+次のセルに移動する
 Text Tables: Go to next cell - switch to next cell in current table.
+
+前のカラムに移動する
 Text Tables: Go to previous cell - switch to previous cell in current table.
+
+対象のカラムのデータを削除する
 Text Tables: Clear cell - clear cell under cursor.
 
 例
 
-| id  | wakeday      | mark |
+| id  | wakeday  | mark |
 | --- | -------- | ---- |
 | 1   | 20200101 | 〇    |
 | 2   | 20200102 | ☓    |
+|     |          |      |
+
