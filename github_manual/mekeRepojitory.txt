@@ -16,6 +16,8 @@ Initialized empty Git repository in C:/Users/swift0910/Documents/tipmemo/.git/
 ・中に指定したファイルが無いと以下のような文が出力される
 fatal: pathspec 'sample.txt' did not match any files
 
+※git add .で今いるディレクトリ内の全てのファイルをaddすることもできる
+
 ⑤git commit オプション(任意) "コミット内容"と入力
 ここではgit commit -m "add new file"と入力
 ・最初のコミット
@@ -26,7 +28,7 @@ fatal: pathspec 'sample.txt' did not match any files
 
 ※ コミット履歴はgit logで確認できる
 
- ⑥git remote add origin https://github.com/okashibako/teatimememo.git
+ ⑥git remote add origin https://github.com/okashibako/リポジトリ名.git
 
  ・リモートリポジトリにローカルリポジトリを登録。
 
