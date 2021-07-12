@@ -1,0 +1,16 @@
+react-native expoのインストール方法
+
+①npm install -g expo-cliでexpoインストール
+
+②expo init sampleProでexpoアプリを作成
+
+③Choose a template:が表示されるので、ここはblankを選択。
+
+④npm iで必要なライブラリを全てインストール
+
+⑤npm startで起動
+
+nodeのバージョン：12.22.3
+npmのバージョン：6.13.0
+※nodeのバージョンが古いとERROR: Node.js v11.13.0 is no longer supportedエラーが
+出るので注意
