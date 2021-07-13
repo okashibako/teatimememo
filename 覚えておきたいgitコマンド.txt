@@ -1,0 +1,11 @@
+■現在のブランチを確認
+git branch --contains=HEAD
+
+■今いるブランチを含めたすべてのブランチの確認
+git branch --contains=HEAD
+
+■masterブランチに移動(ここでは例としてmasterを挙げている)
+git checkout master
+
+■リモートにプッシュ(ここでは例としてmasterを挙げている)
+git push origin master
