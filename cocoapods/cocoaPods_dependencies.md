@@ -28,4 +28,4 @@ $ sudo gem uninstall cocoapods
 sudo gem install xcodeproj
 
 7.cocoapodsをインストール
-sudo gem install xcodeproj
+sudo gem install cocoapods

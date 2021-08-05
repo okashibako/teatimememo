@@ -1,0 +1,17 @@
+npm testは、単体テスト(ユニットテスト)を行うコマンドのこと。
+
+■huskyを使うとテストが楽になる
+
+huskyとは、gitコマンドをhook化して設定したコマンドを走らせることができるライブラリです。
+※例
+// package.json
+{
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test",
+      "...": "..."
+    }
+  }
+huskyライブラリインストールしてpackage.jsonに、git commitやgit pushコマンドを打った際にnpm testで
+テストを実行できます。
