@@ -1,0 +1,32 @@
+githubにてあるライブラリのページに飛ぶ
+
+forkをクリック
+
+自分のアカウントにフォークしたリポジトリが追加される
+
+フォークしたリポジトリをお好みのディレクトリにクローン
+
+■自分のフォークと大元のリポジトリを同期させる
+
+大元のリポジトリのページに移動
+
+codeをクリックしてurlを取得->コピーしておく
+
+git bush（コマンド）にうつりcd 〇〇コマンドで自分のフォークに移動
+
+git remote -vでフォーク用に現在構成されているリモートリポジトリを確認。
+
+先ほどコピーしたurlの先頭にgit remote add upstreamを付けて下記のようにリポジトリを同期
+
+git remote add upstream https://github.com/octocat/Spoon-Knife.git
+
+フォーク用に指定した新しい上流リポジトリを確認するには、再度 git remote -v と入力します。
+フォークの URL が origin として、オリジナルのリポジトリの URL が upstream として表示されるはずです。
+
+$ git remote -v
+> origin    https://github.com/okashibako/Spoon-Knife.git (fetch)
+> origin    https://github.com/okashibako/Spoon-Knife.git (push)
+> upstream  https://github.com/octocat/Spoon-Knife.git (fetch)
+> upstream  https://github.com/octocat/Spoon-Knife.git (push)
+
+これでプルリクを送ることができる
