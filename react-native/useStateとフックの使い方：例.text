@@ -1,0 +1,33 @@
+■useStateとフックの使い方
+
+import React, { useState, useEffect } from 'react';
+import {View, ImageBackground, SafeAreaView, Text, Button} from 'react-native';
+import historyStyle from '../../src/style/historyStyle';
+import HistoryNavigationBar from '../../src/elements/molecules/HistoryNavigationBar';
+
+function history() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(count)
+  });
+  function i (){
+    console.log(count)
+    setCount(count + 1)
+  }
+    return (
+      <SafeAreaView style={historyStyle.safeArea}>
+        <ImageBackground source={require('../../assets/carm_sea.jpg')} style={historyStyle.image}>
+        <HistoryNavigationBar/>
+          <View style={historyStyle.contents}>
+          <Text>You clicked {count} times</Text>
+          <Button onPress={i} title={"カウント"}>
+            Click me
+          </Button>
+          </View>
+        </ImageBackground>
+      </SafeAreaView>
+    );
+}
+
+export default history;
