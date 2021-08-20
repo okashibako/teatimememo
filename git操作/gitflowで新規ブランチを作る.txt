@@ -1,0 +1,14 @@
+既存リポジトリにgit-flowを導入
+
+git  branchで今いるブランチを確認
+(featureから作るのは基本developからなので必ずdevelopに移動してからgit flow initを行う)
+
+git flow initでブランチを初期化
+色々聞かれるのでとりあえずenterを押しまくる
+
+developからfeatureブランチを作成
+git flow feature start current(これから作るブランチの名前)
+
+git branchでブランチ確認。上記のgit flowコマンドが成功していればcurrentブランチに居る
+
+後は、このブランチでコミットすればリモートにもこのブランチが反映される

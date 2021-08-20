@@ -1,0 +1,8 @@
+masterに間違えてチェックアウトした時の対処法
+
+①まずdevelopブランチに移る
+
+②移った状態でgit merge origin/masterを打つ
+
+③git push --set-upstream origin developを打つ
+

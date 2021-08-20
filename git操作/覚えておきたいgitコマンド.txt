@@ -9,3 +9,15 @@ git checkout master
 
 ■リモートにプッシュ(ここでは例としてmasterを挙げている)
 git push origin master
+
+■コミット前の変更を破棄
+
+git checkout HEAD 〇〇.js
+
+■機能を追加するためのブランチを作成する
+これをfeatureブランチといって、ある機能が必要になった時にあるブランチから
+派生するブランチのこと。
+
+例：developからある機能を追加したくなった時
+①git checkout develop
+②git flow feature start ○○(ブランチ名)
