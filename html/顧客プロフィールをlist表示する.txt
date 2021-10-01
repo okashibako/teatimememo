@@ -15,6 +15,10 @@
          </ul>
       </div>
 
+table td {
+  background-color: #e6e6fa;
+
+}
 .squire {
   width: 10px;
   height: 10px;
@@ -22,6 +26,6 @@
   background-color: #000;
 }
 .text{
-  width: 240px;
+  width: 300px;
   margin: 0px;
 }
