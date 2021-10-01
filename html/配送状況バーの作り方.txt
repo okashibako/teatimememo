@@ -1,0 +1,41 @@
+<div class="bar">
+  <div class="ellipse"></div>
+  <div class="line"></div>
+  <div class="ellipse"></div>
+  <div class="line"></div>
+  <div class="ellipse"></div>
+  <div class="line"></div>
+  <div class="ellipse"></div>
+</div>
+<div class="text-box">
+  <p class="text">配送前</p>
+  <p class="text">配送中</p>
+  <p class="text">到着</p>
+  <p class="text">受取済み</p>
+</div>
+
+.bar{
+  display: flex;
+  justify-content: center;
+}
+.ellipse{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #43A047;
+}
+.line {
+  width: 70px;
+  height: 4px;
+  border-radius: 5%;
+  background-color: #43A047;
+  margin-top: 4px;
+}
+.text-box{
+  display: flex;
+  justify-content: center;
+  font-size: 11px;
+}
+.text{
+  margin: 0px 18px 0px 25px;
+}
