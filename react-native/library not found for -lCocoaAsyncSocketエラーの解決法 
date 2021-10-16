@@ -1,0 +1,8 @@
+library not found for -lCocoaAsyncSocketエラーの解決法
+
+xcode内のTARGETS->myapp->Build setting->Search Paths->Library Search pathをクリック
+
+設定を以下のようにして追加する
+$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)
+$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)
+$(inherited)
