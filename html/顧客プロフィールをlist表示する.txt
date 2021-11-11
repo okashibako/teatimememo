@@ -1,0 +1,31 @@
+<div>
+        <ul>
+          <li>
+            <table>
+              <tr>
+                <th><div className="squire"></div></th>
+                <td>
+                  <p className="text">
+                    MilkCheeseCakebisquitロリポップポテトチップスリコリス
+                  </p>
+                </td>
+              </tr>
+            </table>         
+          </li>
+         </ul>
+      </div>
+
+table td {
+  background-color: #e6e6fa;
+
+}
+.squire {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  background-color: #000;
+}
+.text{
+  width: 300px;
+  margin: 0px;
+}

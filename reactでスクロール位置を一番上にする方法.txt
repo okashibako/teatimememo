@@ -1,0 +1,6 @@
+    reactでスクロール位置を一番上にする方法
+    
+    //スクロール位置調整
+    document.getElementById("signup-confirm-page").scroll(0,0)
+
+    signup-confirm-pageはid名になります
