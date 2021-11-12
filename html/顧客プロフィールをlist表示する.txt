@@ -3,10 +3,22 @@
           <li>
             <table>
               <tr>
-                <th><div className="squire"></div></th>
+                <th>
+                  <p>カテゴリー</p>
+                </th>
                 <td>
                   <p className="text">
                     MilkCheeseCakebisquitロリポップポテトチップスリコリス
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  <p>住所</p>
+                </th>
+                <td>
+                  <p className="text">
+                    袋井市諸井353-18
                   </p>
                 </td>
               </tr>
@@ -15,17 +27,15 @@
          </ul>
       </div>
 
-table td {
-  background-color: #e6e6fa;
 
-}
-.squire {
-  width: 10px;
-  height: 10px;
-  margin-right: 5px;
-  background-color: #000;
+
+th{
+  width: 100px;
+  background: #f0f8ff;
+  padding: 10px;
 }
 .text{
-  width: 300px;
+  width: 350px;
   margin: 0px;
+  padding: 10px;
 }

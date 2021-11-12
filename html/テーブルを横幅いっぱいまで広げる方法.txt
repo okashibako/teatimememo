@@ -1,0 +1,6 @@
+テーブルを横幅いっぱいまで広げる方法
+
+table{
+    width: 100%;
+    border-collapse: collapse;  
+  }
